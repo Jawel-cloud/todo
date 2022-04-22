@@ -1,4 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
 body {
   text-align: center;
   background: linear-gradient(90deg, rgb(44, 197, 224) 0%, rgb(108, 240, 81) 26%, rgba(47,210,244,1) 100%); 
+  color: black;
+  text-shadow: 2px 2px 2px rgb(135, 168, 143);
+  font-size: 1.5rem;
+  overflow-x: hidden;
+}
+.mainSite{
+  display: flex;
+  justify-content: space-around;
+}
+button{
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px rgb(135, 168, 143);
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Festive';
+  margin: 3vh auto;
+}
+h3 {
+  color: rgb(8, 44, 6);
+  font-family: 'Festive';
+  margin: 5vh 0 2vh 0;
+}
+.completedTasks{
+  margin-top: 10vh;
+  font-size: 0.7rem;
+}
+.completedTasks h3{
+  font-size: 1.5rem;
+}
+
+.checklistImg {
+  background-image: url(./Assets/checklist.png);
+  height: 60vh;
+  width: 40vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 25vh -12vw 0 0;
+  transform: rotate3d(1, 1, 1, 45deg);
+
+}
+.columnFirst{
+  margin: 8vh 0 0 0;
+}
+.columnSecond{
+  margin: 2vh 0 0 4vw;
+  font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .columnThird{
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .mainSite{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 0.7rem;
+  }
 }
